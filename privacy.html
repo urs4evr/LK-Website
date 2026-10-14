@@ -171,17 +171,17 @@
         <div class="header">
             <div class="logo">💖</div>
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: February 18, 2026</p>
+            <p class="last-updated">Last Updated: October 14, 2026</p>
         </div>
 
         <div class="highlight">
-            <p><strong>TL;DR:</strong> LoveKeeper stores your relationship content (events, memories, photos) locally on your device. To support email reminders and account management, limited account data (such as your email and confirmation/deletion tokens) is stored securely on our server. We use minimal analytics to improve the app.</p>
+            <p><strong>TL;DR:</strong> LoveKeeper stores relationship content on your device. If you enable email reminders and confirm your email address, event names, dates, emoji, and reminder settings are also stored on our server. Account data is stored there for email and account features. We use analytics to improve the app.</p>
         </div>
 
         <h2>1. Introduction</h2>
         <p>Welcome to LoveKeeper ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we handle your information when you use our mobile application LoveKeeper (the "App").</p>
 
-        <p><strong>Key Principle:</strong> Your personal data belongs to you. We designed LoveKeeper so your core relationship content remains on your device, while only limited account data is processed server-side when you use email/account features.</p>
+        <p><strong>Key Principle:</strong> Your personal data belongs to you. Core content stays on your device, except event details needed for email reminders after you enable them and confirm your email address.</p>
 
         <h2>2. Data We Collect</h2>
 
@@ -195,7 +195,7 @@
             <li><strong>App Settings:</strong> Your preferences and customizations</li>
         </ul>
         <p class="highlight">
-            <strong>Important:</strong> If you delete the app or reset your device, all this data will be permanently lost unless you have created a backup.
+            <strong>Important:</strong> If you delete the app or reset your device, this local data may be permanently lost. LoveKeeper does not currently provide a general export, import, or restore feature.
         </p>
 
         <h3>2.2 Account & Email Data Stored Server-Side</h3>
@@ -207,7 +207,7 @@
             <li><strong>Token timestamps:</strong> When confirmation/deletion requests were generated</li>
             <li><strong>Push delivery data:</strong> Push token metadata linked to your account (if available)</li>
         </ul>
-        <p>We do <strong>not</strong> store your events, memories, or photos on our server as part of this account system.</p>
+        <p>For enabled email reminders, we store event names, dates, emoji, and reminder settings on our server. We do not store your memories or photos there as part of this account system.</p>
 
         <h3>2.3 Analytics Data</h3>
         <p>To improve the app, we collect minimal usage data through Amplitude Analytics:</p>
@@ -246,7 +246,7 @@
             <li>Send you reminders about upcoming events (if you enable notifications)</li>
             <li>Provide the core functionality of the app</li>
         </ul>
-        <p>This data never leaves your device unless you explicitly share it (e.g., by exporting or taking a screenshot).</p>
+        <p>If you enable email reminders and confirm your email address, event names, dates, emoji, and reminder settings are also stored on our server to send those reminders. Memories and photos stay on your device unless you explicitly share them.</p>
 
         <h3>3.2 Account & Email Data</h3>
         <p>Server-side account/email data is used to:</p>
@@ -274,7 +274,7 @@
         <div class="contact">
             <h4>Supabase (Database & Edge Functions)</h4>
             <p><strong>Purpose:</strong> Store account/email records and execute confirmation/deletion flows</p>
-            <p><strong>Data Shared:</strong> Email, email confirmation/deletion tokens, related timestamps, push token linkage</p>
+            <p><strong>Data Shared:</strong> Email, email confirmation/deletion tokens, related timestamps, push token linkage, and event names, dates, emoji, and reminder settings when email reminders are enabled</p>
             <p><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></p>
         </div>
 
@@ -338,10 +338,11 @@
 
         <h2>6. Your Rights</h2>
 
+        <p>Depending on where you live, applicable privacy laws such as the GDPR may give you additional rights to access, correct, restrict, object to, export, or delete personal data we process.</p>
         <p>You have the right to:</p>
         <ul>
             <li><strong>Access:</strong> View all data stored in the app at any time</li>
-            <li><strong>Export:</strong> Export your data (available in app settings)</li>
+            <li><strong>Data requests:</strong> Contact us to request information about personal data stored on our servers. The app does not currently provide an export of local relationship content.</li>
             <li><strong>Delete local content:</strong> Delete specific events, memories, or all local app content</li>
             <li><strong>Delete account:</strong> Initiate permanent server-side account deletion in-app (Settings → Account → Request Account Deletion)</li>
             <li><strong>Request Information:</strong> Contact us about your data (see contact info below)</li>
@@ -351,7 +352,7 @@
         <p>We take security seriously:</p>
         <ul>
             <li><strong>Local Storage:</strong> Your data is stored securely on your device using iOS/Android built-in security</li>
-            <li><strong>Scoped Server Storage:</strong> Only limited account/email data is stored server-side for account features</li>
+            <li><strong>Scoped Server Storage:</strong> Account data and the event details needed for enabled email reminders are stored server-side</li>
             <li><strong>Encrypted Connections:</strong> All communications with analytics services use HTTPS encryption</li>
             <li><strong>Minimal Data Collection:</strong> We only collect what's necessary to improve the app</li>
         </ul>
@@ -360,7 +361,7 @@
             <strong>Your Responsibility:</strong> Since data is stored locally, we recommend:
             <br>• Using device encryption (enabled by default on modern iOS/Android)
             <br>• Using a strong device passcode
-            <br>• Regularly backing up your device
+            <br>• Keeping separate copies of irreplaceable photos and information; device backups may not include or restore all LoveKeeper content
             <br>• Not sharing your device with untrusted persons
         </p>
 
