@@ -76,3 +76,6 @@ details p { margin: 8px 0 4px; }
 .embed-body { background: transparent; font-size: 16px; }
 .embed-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; text-align: center; }
 .embed-card .total { margin-top: 0; font-size: 28px; }
+
+.cover { margin: 0; }
+.cover img { display: block; width: 100%; height: auto; }
