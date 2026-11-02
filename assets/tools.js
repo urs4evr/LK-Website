@@ -82,6 +82,7 @@
   var api = { parse: parse, serial: serial, addMonths: addMonths, addDays: addDays, daysBetween: daysBetween, breakdown: breakdown, nextAnniversary: nextAnniversary, nextRoundDay: nextRoundDay, milestones: milestones, nextDate: nextDate };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   if (!root.document) return;
+  root.LoveKeeperDates = api;
 
   var doc = root.document;
   var now = new Date();

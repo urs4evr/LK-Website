@@ -14,129 +14,41 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="stylesheet" href="/blog/article-styles.css">
-  <style>
-    .blog-card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .blog-card:focus-visible { outline: 3px solid #9b2c52; outline-offset: 4px; }
-    .blog-card-body .card-meta { color: #666; }
-    .blog-content > .blog-intro { padding: 20px 0; line-height: 1.6; color: #555; }
-    @media (prefers-reduced-motion: reduce) { .blog-card { transition: none; } .blog-card:hover { transform: none; } }
-  </style>
+  <link rel="stylesheet" href="/assets/editorial.css">
+  <link rel="stylesheet" href="/assets/blog-editorial.css">
   <script>!function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(arguments,0),resolve:n,reject:r})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(arguments,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t))};o(e,t,Array.prototype.slice.call(arguments,0))}},a=function(e){for(var t=0;t<g.length;t++)i(e,g[t],!1);for(var r=0;r<m.length;r++)i(e,m[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-PPfHw98myKtJkA9OdPBMQ6n8yvUaYk0EyUQccFSIQGmB05K6aAMZwvv8z50a5hT2",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var l=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<p.length;d++)n(l,p[d]);r.Identify=l;for(var f=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<v.length;y++)n(f,v[y]);r.Revenue=f;var g=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
         amplitude.init('ad0a670d36f60cd419802ccfb5252139');amplitude.track('page_viewed', {page: '/blog/'});</script>
 </head>
-<body>
-  <nav class="nav" aria-label="Main navigation">
-    <a class="nav-logo" href="/"><img src="/logo.png" alt=""> LoveKeeper</a>
-    <a href="/">← Home</a>
-  </nav>
-  <header class="blog-hero">
-    <h1>LoveKeeper Blog</h1>
-    <p>Remember your dates. Make time to celebrate.</p>
-  </header>
-  <main class="blog-content">
-    <p class="blog-intro">Explore 10 guides, free tools and app comparisons for your anniversary, relationship milestones and the dates that matter to you.</p>
-    <a href="/relationship-counter/" class="blog-card">
+<body class="lk-page lk-blog">
+  <!-- editorial-header -->
+<a class="lk-skip" href="#main-content">Skip to content</a>
+<header class="lk-header"><nav class="lk-nav" aria-label="Main navigation">
+<a class="lk-brand" href="/"><img src="/logo.png" alt="" width="32" height="32"><span>LoveKeeper</span></a>
+<div class="lk-desktop-links"><a href="/">App</a><a href="/blog/" aria-current="page">Guides</a><a href="/blog/#free-tools">Free tools</a></div><a class="lk-download" href="/#download">Get the app <span aria-hidden="true">↗</span></a>
+<details class="lk-mobile-menu"><summary>Menu</summary><div><a href="/">App</a><a href="/blog/" aria-current="page">Guides</a><a href="/blog/#free-tools">Free tools</a><a href="/#download">Get the app ↗</a></div></details>
+</nav></header>
+<!-- /editorial-header -->
+  <main id="main-content" class="lk-main">
+    <header class="lk-hero"><div class="lk-hero-copy"><p class="lk-eyebrow">The LoveKeeper blog</p><h1>Little moments.<br>Important dates.</h1><p class="lead">Make room for your story. Anniversary guides, thoughtful ideas and free tools to help you remember and celebrate.</p><a class="lk-text-link" href="/relationship-milestones/">Explore your relationship milestones <span aria-hidden="true">→</span></a></div><figure><img src="/assets/covers/relationship-milestones.webp" alt="A couple looking through a photo album together" width="1200" height="630" fetchpriority="high" decoding="async"></figure></header>
+    <nav class="lk-topic-nav" aria-label="Blog topics"><a href="#guides">Guides &amp; ideas</a><a href="#free-tools">Free tools</a><a href="#app-comparisons">App comparisons</a></nav>
+    <div class="lk-blog-sections"><section id="guides" class="lk-blog-group"><p class="lk-eyebrow">Made for the two of you</p><h2>A little closer, every day</h2><p class="lk-group-intro">Ideas and guides for the moments you share.</p><div class="lk-blog-grid"><a href="/relationship-milestones/" class="blog-card">
     <div class="blog-card-image">
-      <img src="/assets/covers/relationship-counter.webp" alt="A couple sits close together on a park bench at sunset, looking out over a lake after years together" fetchpriority="high" decoding="async">
-      <div class="card-overlay"><span class="card-tag">Free tool &amp; guide</span></div>
+      <img src="/assets/covers/relationship-milestones.webp" alt="A couple looks through a photo album of their relationship milestones on the sofa" width="1200" height="630" loading="lazy" decoding="async">
     </div>
     <div class="blog-card-body">
-      <h2>Relationship Counter: How Long Have We Been Together?</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>Free relationship counter: see how long you have been together in days, months and years, your next anniversary and day 1,000. Plus how to count it.</p>
-      <span class="read-more">Open Tool & Guide →</span>
-    </div>
-  </a>
-<a href="/anniversary-calculator/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/anniversary-calculator.webp" alt="A desk calendar with anniversary dates circled next to two coffee cups and flowers" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">Free tool &amp; guide</span></div>
-    </div>
-    <div class="blog-card-body">
-      <h2>Anniversary Calculator: Your Next Dates and Milestones</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>Free anniversary calculator: enter your wedding or dating date to see your next anniversary, 100 and 1,000 days and every milestone up to 50 years, with weekdays.</p>
-      <span class="read-more">Open Tool & Guide →</span>
-    </div>
-  </a>
-<a href="/valentines-day-countdown/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/valentines-day-countdown.webp" alt="A paper heart garland, a wrapped present and red tulips on a kitchen table in the days before Valentine's Day" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">Free tool &amp; guide</span></div>
-    </div>
-    <div class="blog-card-body">
-      <h2>Valentine's Day Countdown: How Many Days Until Feb 14?</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>Live Valentine's Day countdown: how many days and weeks until February 14, which weekday it falls on, and what to book or order by when.</p>
-      <span class="read-more">Open Tool & Guide →</span>
-    </div>
-  </a>
-<a href="/relationship-milestones/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/relationship-milestones.webp" alt="A couple looks through a photo album of their relationship milestones on the sofa" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">Relationship guide</span></div>
-    </div>
-    <div class="blog-card-body">
+      <span class="lk-eyebrow">Relationship guide</span>
       <h2>Relationship Milestones: Dates, Firsts and Monthsaries</h2>
       <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
       <p>Relationship milestones by date and by moment: 1 month, 100 days, 6 months, 1,000 days, monthsaries and firsts, with survey timing and a free date calculator.</p>
       <span class="read-more">Read Article →</span>
     </div>
   </a>
-<a href="/best-anniversary-apps/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/best-anniversary-apps.webp" alt="A smartphone with an anniversary reminder above a table with a small gift and a paper calendar with the date circled" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">App comparison</span></div>
-    </div>
-    <div class="blog-card-body">
-      <h2>10 Best Anniversary Apps in 2026: Trackers &amp; Reminders</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>The 10 best anniversary apps in 2026, checked in the App Store and Google Play: what each costs, which have widgets, and which your partner must join.</p>
-      <span class="read-more">Read Article →</span>
-    </div>
-  </a>
-<a href="/compare/my-love-alternative/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/my-love-app-alternative.webp" alt="A couple on a sofa looks at a relationship counter app on a phone, as an alternative to the My Love app" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">App comparison</span></div>
-    </div>
-    <div class="blog-card-body">
-      <h2>My Love App Alternative: LoveKeeper vs My Love (2026)</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>A free My Love relationship counter alternative for iPhone and Android: reminders for every date, photo memories, no paid upgrade. Honest side-by-side comparison.</p>
-      <span class="read-more">Read Article →</span>
-    </div>
-  </a>
-<a href="/compare/been-together-alternative/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/been-together-app-alternative.webp" alt="A couple on a park bench looks at an anniversary app on a phone, as an alternative to the Been Together app" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">App comparison</span></div>
-    </div>
-    <div class="blog-card-body">
-      <h2>Been Together App Alternative Without Ads (2026)</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>An ad-free Been Together alternative for iPhone and Android: reminders days before every date, photo memories, no in-app purchases. Honest comparison.</p>
-      <span class="read-more">Read Article →</span>
-    </div>
-  </a>
-<a href="/compare/between-alternative/" class="blog-card">
-    <div class="blog-card-image">
-      <img src="/assets/covers/between-app-alternative.webp" alt="A person by a window checks an anniversary reminder on a phone, as a one-phone alternative to the Between app" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">App comparison</span></div>
-    </div>
-    <div class="blog-card-body">
-      <h2>Between App Alternative: LoveKeeper vs Between (2026)</h2>
-      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
-      <p>Looking for a Between app alternative? Compare Between, the private messenger for two, with LoveKeeper, a free anniversary tracker only one partner needs.</p>
-      <span class="read-more">Read Article →</span>
-    </div>
-  </a>
 <a href="/blog/valentines-day-date-ideas.html" class="blog-card">
     <div class="blog-card-image">
-      <img src="/blog/images/date-ideas/picnic-final-a.jpg" alt="A couple enjoying a picnic in a park" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">Date ideas</span></div>
+      <img src="/blog/images/date-ideas/picnic-final-a.jpg" alt="A couple enjoying a picnic in a park" width="1200" height="630" loading="lazy" decoding="async">
     </div>
     <div class="blog-card-body">
+      <span class="lk-eyebrow">Date ideas</span>
       <h2>10 Valentine's Day Date Ideas</h2>
       <div class="card-meta"><time datetime="2026-02-11">February 11, 2026</time></div>
       <p>From a spa day to a picnic or an evening at home: find a way to spend Valentine's Day together.</p>
@@ -145,24 +57,109 @@
   </a>
 <a href="/blog/valentines-day-gift-ideas.html" class="blog-card">
     <div class="blog-card-image">
-      <img src="/assets/covers/valentines-day-countdown.webp" alt="A wrapped present, paper hearts and red tulips on a table" loading="lazy" decoding="async">
-      <div class="card-overlay"><span class="card-tag">Gift guide</span></div>
+      <img src="/assets/covers/valentines-day-countdown.webp" alt="A wrapped present, paper hearts and red tulips on a table" width="1200" height="630" loading="lazy" decoding="async">
     </div>
     <div class="blog-card-body">
+      <span class="lk-eyebrow">Gift guide</span>
       <h2>12 Romantic Valentine's Day Gift Ideas</h2>
       <div class="card-meta"><time datetime="2026-02-08">February 8, 2026</time></div>
       <p>Gift ideas for your partner, from shared experiences and keepsakes to something for an evening together.</p>
       <span class="read-more">Read Article →</span>
     </div>
-  </a>
-  </main>
-  <footer class="footer">
-    <div class="footer-links">
-      <a href="/">LoveKeeper App</a><a href="/relationship-counter/">Relationship Counter</a>
-      <a href="/anniversary-calculator/">Anniversary Calculator</a><a href="/support.html">Support</a>
-      <a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="/contact.html">Contact</a>
+  </a></div></section>
+<section id="free-tools" class="lk-blog-group"><p class="lk-eyebrow">A little help with the counting</p><h2>Your dates, at a glance</h2><p class="lk-group-intro">A few simple tools for your story. Free, with no sign-up.</p><div class="lk-blog-grid"><a href="/relationship-counter/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/relationship-counter.webp" alt="A couple sits close together on a park bench at sunset, looking out over a lake after years together" width="1200" height="630" loading="lazy" decoding="async">
     </div>
-    <p>© 2026 LoveKeeper. All rights reserved.</p>
-  </footer>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">Free tool &amp; guide</span>
+      <h2>Relationship Counter: How Long Have We Been Together?</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>Free relationship counter: see how long you have been together in days, months and years, your next anniversary and day 1,000. Plus how to count it.</p>
+      <span class="read-more">Open Tool & Guide →</span>
+    </div>
+  </a>
+<a href="/anniversary-calculator/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/anniversary-calculator.webp" alt="A desk calendar with anniversary dates circled next to two coffee cups and flowers" width="1200" height="630" loading="lazy" decoding="async">
+    </div>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">Free tool &amp; guide</span>
+      <h2>Anniversary Calculator: Your Next Dates and Milestones</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>Free anniversary calculator: enter your wedding or dating date to see your next anniversary, 100 and 1,000 days and every milestone up to 50 years, with weekdays.</p>
+      <span class="read-more">Open Tool & Guide →</span>
+    </div>
+  </a>
+<a href="/valentines-day-countdown/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/valentines-day-countdown.webp" alt="A paper heart garland, a wrapped present and red tulips on a kitchen table in the days before Valentine's Day" width="1200" height="630" loading="lazy" decoding="async">
+    </div>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">Free tool &amp; guide</span>
+      <h2>Valentine's Day Countdown: How Many Days Until Feb 14?</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>Live Valentine's Day countdown: how many days and weeks until February 14, which weekday it falls on, and what to book or order by when.</p>
+      <span class="read-more">Open Tool & Guide →</span>
+    </div>
+  </a></div></section>
+<section id="app-comparisons" class="lk-blog-group"><p class="lk-eyebrow">Keep the moments close</p><h2>Find your kind of reminder</h2><p class="lk-group-intro">Compare anniversary apps and choose what fits your relationship.</p><div class="lk-blog-grid"><a href="/best-anniversary-apps/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/best-anniversary-apps.webp" alt="A smartphone with an anniversary reminder above a table with a small gift and a paper calendar with the date circled" width="1200" height="630" loading="lazy" decoding="async">
+    </div>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">App comparison</span>
+      <h2>10 Best Anniversary Apps in 2026: Trackers &amp; Reminders</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>The 10 best anniversary apps in 2026, checked in the App Store and Google Play: what each costs, which have widgets, and which your partner must join.</p>
+      <span class="read-more">Read Article →</span>
+    </div>
+  </a>
+<a href="/compare/my-love-alternative/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/my-love-app-alternative.webp" alt="A couple on a sofa looks at a relationship counter app on a phone, as an alternative to the My Love app" width="1200" height="630" loading="lazy" decoding="async">
+    </div>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">App comparison</span>
+      <h2>My Love App Alternative: LoveKeeper vs My Love (2026)</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>A free My Love relationship counter alternative for iPhone and Android: reminders for every date, photo memories, no paid upgrade. Honest side-by-side comparison.</p>
+      <span class="read-more">Read Article →</span>
+    </div>
+  </a>
+<a href="/compare/been-together-alternative/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/been-together-app-alternative.webp" alt="A couple on a park bench looks at an anniversary app on a phone, as an alternative to the Been Together app" width="1200" height="630" loading="lazy" decoding="async">
+    </div>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">App comparison</span>
+      <h2>Been Together App Alternative Without Ads (2026)</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>An ad-free Been Together alternative for iPhone and Android: reminders days before every date, photo memories, no in-app purchases. Honest comparison.</p>
+      <span class="read-more">Read Article →</span>
+    </div>
+  </a>
+<a href="/compare/between-alternative/" class="blog-card">
+    <div class="blog-card-image">
+      <img src="/assets/covers/between-app-alternative.webp" alt="A person by a window checks an anniversary reminder on a phone, as a one-phone alternative to the Between app" width="1200" height="630" loading="lazy" decoding="async">
+    </div>
+    <div class="blog-card-body">
+      <span class="lk-eyebrow">App comparison</span>
+      <h2>Between App Alternative: LoveKeeper vs Between (2026)</h2>
+      <div class="card-meta"><time datetime="2026-11-02">November 2, 2026</time></div>
+      <p>Looking for a Between app alternative? Compare Between, the private messenger for two, with LoveKeeper, a free anniversary tracker only one partner needs.</p>
+      <span class="read-more">Read Article →</span>
+    </div>
+  </a></div></section></div>
+  </main>
+  <!-- editorial-footer -->
+<footer class="lk-footer"><div class="lk-footer-inner">
+<div class="lk-footer-brand"><a class="lk-brand" href="/"><img src="/logo.png" alt="" width="32" height="32"><span>LoveKeeper</span></a><p>Remember your dates.<br>Make time to celebrate.</p></div>
+<nav aria-label="Explore"><h2>Explore</h2><a href="/blog/">All guides</a><a href="/relationship-milestones/">Relationship milestones</a><a href="/best-anniversary-apps/">App comparisons</a><a href="/facts/">About LoveKeeper</a></nav>
+<nav aria-label="Free tools"><h2>Free tools</h2><a href="/relationship-counter/">Relationship counter</a><a href="/anniversary-calculator/">Anniversary calculator</a><a href="/valentines-day-countdown/">Valentine’s countdown</a></nav>
+<nav aria-label="Help and legal"><h2>Help &amp; legal</h2><a href="/support.html">Support</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of service</a></nav>
+<div class="lk-footer-bottom"><span>© 2026 LoveKeeper · Always You Corporation</span><span><span class="lk-heart" aria-hidden="true">♥</span> Made with care for your story.</span></div>
+</div></footer>
+<!-- /editorial-footer -->
 </body>
 </html>

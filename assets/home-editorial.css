@@ -1,0 +1,11 @@
+/* Keep the app presentation; connect it to the shared rose editorial identity. */
+.lk-home { background: var(--lk-bg); color: var(--lk-text); }
+.lk-home .hero { background: linear-gradient(125deg,#a72d52,#df5d82 65%,#ec8fa8); }
+.lk-home :is(.hero h1,.section-title,.cta-section h2) { font-family: var(--lk-serif); font-weight: 500; letter-spacing: -.02em; }
+.lk-home .hero h1 { font-size: clamp(32px,4vw,48px); line-height: 1.15; }
+.lk-home .cta-section { background: #6d2947; }
+.lk-home .features, .lk-home .privacy-section { background: var(--lk-bg); }
+.lk-home .feature-card { background: #fff9fb; border-color: var(--lk-line); box-shadow: none; }
+.lk-home .feature-icon { background: linear-gradient(135deg,#be3e64,#e883a1); }
+.lk-home .feature-card:hover { border-color: var(--lk-action); }
+.lk-home .lk-header a, .lk-home .lk-footer a { transition: none; }
