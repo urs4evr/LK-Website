@@ -153,7 +153,17 @@
       if (!start) { result.hidden = true; return; }
       remember(input.value);
       body.textContent = "";
-      milestones(start).forEach(function (item) {
+      // The next yearly anniversary is always listed, also between round years (e.g. the 12th).
+      var list = milestones(start);
+      if (serial(start) <= serial(today)) {
+        var next = nextAnniversary(start, today);
+        var label = plural(next.number, "year");
+        if (!list.some(function (item) { return item.label === label; })) {
+          list.push({ label: label, date: next.date });
+          list.sort(function (a, b) { return serial(a.date) - serial(b.date); });
+        }
+      }
+      list.forEach(function (item) {
         var left = daysBetween(today, item.date);
         if (left < 0) return;
         var row = doc.createElement("tr");
@@ -177,6 +187,8 @@
     var date = nextDate(+box.getAttribute("data-month"), +box.getAttribute("data-day"), today);
     var left = daysBetween(today, date);
     text(box.querySelector("[data-total]"), left === 0 ? "It's today!" : plural(left, "day"));
+    var weeks = Math.floor(left / 7), rest = left % 7;
+    text(box.querySelector("[data-weeks]"), left < 7 ? "" : "That is " + plural(weeks, "week") + (rest ? " and " + plural(rest, "day") : ""));
     text(box.querySelector("[data-date]"), weekday(date) + ", " + format(date));
   }
 
