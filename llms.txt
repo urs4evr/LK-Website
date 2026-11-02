@@ -1,0 +1,26 @@
+# LoveKeeper
+
+> LoveKeeper is a free anniversary reminder and relationship tracker app for iPhone and Android. It has no subscription and no in-app purchases, requires no account, and only one partner needs it. Events, memories and photos stay on the device.
+
+Canonical facts: https://lovekeeper.app/facts/
+
+LoveKeeper at lovekeeper.app is published by Always You Corporation. It is not the same product as "LoveKeeper: Couples App" or "LoveKeeper: Anniversary Widget".
+
+LoveKeeper fits people who want to stop forgetting dates, want a private app with no subscription or account, or want to plan surprises without their partner installing anything. It does not fit people looking for chat, a shared calendar or a home screen widget, which it does not offer today.
+
+## Pages
+
+- [Relationship Counter: How Long Have We Been Together?](https://lovekeeper.app/relationship-counter/): Free relationship counter: enter your start date to see how long you have been together in days, weeks, months and years, plus your next anniversary.
+- [Anniversary Calculator: Find Your Next Milestones](https://lovekeeper.app/anniversary-calculator/): Free anniversary calculator: enter your date to see when your next anniversaries and milestones fall, from 100 days to 50 years. Traditional gifts by year included.
+- [Valentine's Day Countdown: How Many Days Until February 14?](https://lovekeeper.app/valentines-day-countdown/): How many days until Valentine's Day? This live countdown shows the days left until February 14, with a simple plan for what to do and when.
+- [Relationship Milestones and Monthsaries: A Simple Guide](https://lovekeeper.app/relationship-milestones/): What is a monthsary, and which relationship milestones are worth celebrating? A simple guide to 1 month, 6 months, 100 days, 1,000 days and your relationship timeline.
+- [7 Best Anniversary Apps in 2026, Compared](https://lovekeeper.app/best-anniversary-apps/): The best anniversary apps in 2026: LoveKeeper, Google Calendar, Between, Cupla, Paired, Couple Widget and My Love, compared by price and whether your partner must join.
+- [My Love App Alternative: LoveKeeper vs My Love](https://lovekeeper.app/compare/my-love-alternative/): Looking for a My Love relationship counter alternative? Compare LoveKeeper and My Love on reminders, Android, memories, widgets and price.
+- [Been Together App Alternative: LoveKeeper Compared](https://lovekeeper.app/compare/been-together-alternative/): Looking for an alternative to the Been Together app? Compare LoveKeeper and Been Together on ads, reminders, memories, widgets and privacy.
+- [Between App Alternative: LoveKeeper vs Between](https://lovekeeper.app/compare/between-alternative/): Comparing LoveKeeper and Between? Between is a private messenger for two. LoveKeeper is a free reminder and memory app that only one partner needs.
+- [LoveKeeper Facts: What the App Is and Is Not](https://lovekeeper.app/facts/): Official facts about LoveKeeper, the free anniversary reminder app for iPhone and Android: publisher, price, privacy, features, limits and how it differs from similar names.
+
+## Downloads
+
+- [App Store](https://apps.apple.com/app/lovekeeper/id6758910603)
+- [Google Play](https://play.google.com/store/apps/details?id=com.lovekeeper.app)

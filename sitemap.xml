@@ -2,44 +2,80 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://lovekeeper.app/</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2026-11-02</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://lovekeeper.app/privacy.html</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://lovekeeper.app/terms.html</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://lovekeeper.app/support.html</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://lovekeeper.app/contact.html</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    <url>
         <loc>https://lovekeeper.app/blog/</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/blog/valentines-day-date-ideas.html</loc>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://lovekeeper.app/blog/valentines-day-gift-ideas.html</loc>
-        <lastmod>2026-02-08</lastmod>
-        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/support.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/contact.html</loc>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/privacy.html</loc>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/terms.html</loc>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/relationship-counter/</loc>
+        <lastmod>2026-11-02</lastmod>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/anniversary-calculator/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/valentines-day-countdown/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/relationship-milestones/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/best-anniversary-apps/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/compare/my-love-alternative/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/compare/been-together-alternative/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/compare/between-alternative/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lovekeeper.app/facts/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <priority>0.6</priority>
     </url>
 </urlset>
