@@ -97,28 +97,49 @@
   function remembered() { try { return root.localStorage.getItem("lk-start-date"); } catch (e) { return null; } }
   function remember(value) { try { root.localStorage.setItem("lk-start-date", value); } catch (e) {} }
 
+  // A shared link (?start=YYYY-MM-DD) shows that date but does not replace the visitor's own saved date.
   function counter(box) {
     var input = box.querySelector("input");
     var result = box.querySelector(".result");
-    function show() {
+    var shared = parse(new URLSearchParams(root.location.search).get("start"));
+    var share = box.querySelector("[data-share]");
+    function show(fromLink) {
       var start = parse(input.value);
       if (!start || serial(start) > serial(today)) { result.hidden = true; return; }
-      remember(input.value);
+      if (fromLink !== true) remember(input.value);
       var total = daysBetween(start, today);
       var parts = breakdown(start, today);
       var next = nextAnniversary(start, today);
       var round = nextRoundDay(start, today);
       text(box.querySelector("[data-total]"), plural(total, "day"));
-      text(box.querySelector("[data-parts]"), plural(parts.years, "year") + ", " + plural(parts.months, "month") + " and " + plural(parts.days, "day") + ", or " + plural(Math.floor(total / 7), "week") + ".");
+      text(box.querySelector("[data-parts]"), plural(parts.years, "year") + ", " + plural(parts.months, "month") + " and " + plural(parts.days, "day") + ". In total: " + plural(parts.years * 12 + parts.months, "month") + " or " + plural(Math.floor(total / 7), "week") + ".");
       text(box.querySelector("[data-next]"), next.inDays === 0 ? "Your anniversary number " + next.number + " is today." : "Anniversary number " + next.number + " is on " + weekday(next.date) + ", " + format(next.date) + ", in " + plural(next.inDays, "day") + ".");
       text(box.querySelector("[data-round]"), round ? "Day " + number(round.days) + " is on " + format(round.date) + ", in " + plural(round.inDays, "day") + "." : "");
       var code = box.querySelector("[data-embed]");
       if (code) code.value = '<iframe src="https://lovekeeper.app/embed/relationship-counter/?start=' + iso(start) + '" width="320" height="130" style="border:0" title="Relationship counter"></iframe>';
       result.hidden = false;
     }
+    function shareLink(event) {
+      event.preventDefault();
+      var start = parse(input.value);
+      if (!start) return;
+      var url = root.location.origin + root.location.pathname + "?start=" + iso(start);
+      var label = share.textContent;
+      function track(method) { if (root.amplitude) root.amplitude.track("counter_shared", { method: method }); }
+      function copied() { share.textContent = "Link copied"; setTimeout(function () { share.textContent = label; }, 2000); track("copy"); }
+      if (root.navigator.share) {
+        root.navigator.share({ title: "How long we have been together", url: url }).then(function () { track("share_sheet"); }, function () {});
+      } else if (root.navigator.clipboard) {
+        root.navigator.clipboard.writeText(url).then(copied, function () { root.prompt("Copy this link", url); });
+      } else {
+        root.prompt("Copy this link", url);
+      }
+    }
     input.max = iso(today);
     input.addEventListener("input", show);
+    if (share) share.addEventListener("click", shareLink);
     var saved = remembered();
+    if (shared && serial(shared) <= serial(today)) { input.value = iso(shared); show(true); return; }
     if (saved) input.value = saved;
     show();
   }
