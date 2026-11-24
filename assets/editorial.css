@@ -154,3 +154,8 @@ body { margin: 0; background: var(--lk-bg); color: var(--lk-text); }
   .lk-footer-brand { grid-column: 1/-1; }
 }
 @media (prefers-reduced-motion: reduce) { .lk-page *, .lk-page *::before, .lk-page *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+
+/* Real app screen inside a guide (scripts/web/site.mjs → APP_SHOTS) */
+.lk-app-shot { margin: 8px auto 40px; max-width: 300px; text-align: center; }
+.lk-app-shot img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--lk-line); background: var(--lk-surface); }
+.lk-app-shot figcaption { margin-top: 12px; font: 14px/1.6 var(--lk-sans); color: var(--lk-muted); text-align: left; }
